@@ -31,3 +31,16 @@ tqdm=4.66.2
 ### Run the demo
 All the original scRNA-seq datasets can be downloaded ([CellBench](https://github.com/LuyiTian/sc_mixology/tree/master), [GSE131907](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907), [GSM5436518](https://db.cngb.org/cdcp/dataset/SCDS0000567/), [Deng](https://figshare.com/articles/software/scRNMF/23725986?file=41653401)).
 
+We can quickly start scGACL：
+1. preprocess scRNA-seq data:
+
+```python 
+python trainer/datasets.py  # generate preprocess.h5ad
+```
+
+2. impute scRNA-seq data:
+```python
+python main.py # generate result.csv
+```
+
+
