@@ -27,7 +27,7 @@ if __name__ == '__main__':
     dataset = MyDataset(ad=rna_ad, use_label=cfg.MODEL_USE_CELLTYPE)
     train_dataloader = DataLoader(dataset, batch_size=cfg.TRAIN.PRE_BATCH_SIZE, shuffle=False)
 
-    # 预训练模型
+    # 
     out_path = r'F:/pythonProject/scGACL/sim1/'
     mkdir_p(out_path)
     net_path = out_path + 'net_state_dict/'
@@ -59,3 +59,4 @@ if __name__ == '__main__':
     rna_predict = np.where((predict_drop < threshold) & (drop_raw.X == 0), 0, rna_predict)
     rna_impute = pd.DataFrame(rna_predict, index=cells, columns=genes)
     rna_impute.to_csv(out_path + "result.csv")
+
