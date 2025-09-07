@@ -29,5 +29,5 @@ tqdm=4.66.2
 
 ## Usage
 ### Run the demo
-The scRNA-seq datasets can be downloaded
+All the original scRNA-seq datasets can be downloaded ([CellBench](https://github.com/LuyiTian/sc_mixology/tree/master), [GSE131907](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907), [GSM5436518](https://db.cngb.org/cdcp/dataset/SCDS0000567/), [Deng](https://figshare.com/articles/software/scRNMF/23725986?file=41653401)).
 
