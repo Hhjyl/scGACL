@@ -29,5 +29,5 @@ tqdm=4.66.2
 
 ## Usage
 ### Run the demo
-
+The scRNA-seq datasets can be downloaded
 
