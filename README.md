@@ -29,7 +29,7 @@ tqdm=4.66.2
 
 ## Usage
 ### Run the demo
-All the original scRNA-seq datasets can be downloaded ([CellBench](https://github.com/LuyiTian/sc_mixology/tree/master), [GSE131907](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907), [GSM5436518](https://db.cngb.org/cdcp/dataset/SCDS0000567/), [Deng](https://figshare.com/articles/software/scRNMF/23725986?file=41653401)).
+All the original scRNA-seq datasets can be downloaded ([Simulated 1-6](https://figshare.com/articles/software/scRNMF/23725986?file=41653401), [CellBench](https://github.com/LuyiTian/sc_mixology/tree/master), [GSE131907](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907), [GSM5436518](https://db.cngb.org/cdcp/dataset/SCDS0000567/), [Deng](https://figshare.com/articles/software/scRNMF/23725986?file=41653401)).
 
 We can quickly start scGACL：
 1. preprocess scRNA-seq data:
@@ -43,4 +43,10 @@ python trainer/datasets.py  # generate preprocess.h5ad
 python main.py # generate result.csv
 ```
 
+### Input file
+scGACL requires a gene expression matrix as input. The data should be preprocessed to generate an h5ad file with cells as rows and genes as columns. If cell type labels are available, please provide them during preprocessing.
+These labels should be stored in the obs field of the h5ad file, with the column name: cell_type. The resulting preprocessed h5ad file will serve as the input for the imputation stage.
+
+### Output file
+The output of scGACL includes the final imputed expression matrix, saved as result.csv, and the trained model files stored in the net_state_dict/ folder.
 
