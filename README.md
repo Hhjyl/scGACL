@@ -52,14 +52,14 @@ The output of scGACL includes the final imputed expression matrix, saved as resu
 
 ### Hyperparameters
 Configuration files containing scGACL's hyperparameters can be found in the trainer/ folder. Key hyperparameters include:
-|  Parameter   | Description  |
-|  ----  | ----  |
-| GENENUM  | Number of genes to be imputed. |
-| Z_SIZE  | Dimensionality of the latent space in VaDE. |
-| N_CLASS | If cell type labels are available in the scRNA-seq dataset, this parameter specifies the number of distinct cell types. |
-| N_CLUSTER | If no cell type labels are provided, the model performs preliminary clustering on the dataset, and this parameter defines the number of clusters. |
-| VAE_EPOCH | Number of epochs for Phase 1 training of VaDE. |
-| VAE_LR | Learning rate for Phase 1 training of VaDE. |
-| VAE_BATCH_SIZE | atch size for Phase 1 training of VaDE. |
+|  `Parameter`   | Description  |
+|  :----  | :----  |
+| `GENENUM` | Number of genes to be imputed. |
+| `Z_SIZE`  | Dimensionality of the latent space in VaDE. |
+| `N_CLASS` | If cell type labels are available in the scRNA-seq dataset, this parameter specifies the number of distinct cell types. |
+| `N_CLUSTER` | If no cell type labels are provided, the model performs preliminary clustering on the dataset, and this parameter defines the number of clusters. |
+| `VAE_EPOCH` | Number of epochs for Phase 1 training of VaDE. |
+| `VAE_LR` | Learning rate for Phase 1 training of VaDE. |
+| `VAE_BATCH_SIZE` | Batch size for Phase 1 training of VaDE. |
 
 
