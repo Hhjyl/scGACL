@@ -50,3 +50,5 @@ These labels should be stored in the obs field of the h5ad file, with the column
 ### Output file
 The output of scGACL includes the final imputed expression matrix, saved as result.csv, and the trained model files stored in the net_state_dict/ folder.
 
+### hyperparameters
+
