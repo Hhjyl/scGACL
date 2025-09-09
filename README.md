@@ -68,5 +68,6 @@ Configuration files containing scGACL's hyperparameters can be found in the trai
 | `LAMBDA_G_ADV` | Weight coefficient for the adversarial loss. |
 | `LAMBDA_SIMCL` | Weight coefficient for the cell-level contrastive loss. |
 | `LAMBDA_SUPCL` | Weight coefficient for the cell-type-level contrastive loss. |
+| `TEMPERATURE` | The temperature parameter used in contrastive learning. |
 
 
