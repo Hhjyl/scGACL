@@ -1,10 +1,10 @@
 # scGACL
 a generative adversarial network with  multi-scale contrastive learning for accurate  scRNA-seq imputation
 ## Overview
-Single-cell RNA sequencing (scRNA-seq) is a powerful technology for studying cell-to-cell heterogeneity, but its application is hampered by dropout events. Therefore, accurate imputation of dropout events is crucial for downstream analyses of scRNA-seq data. However, existing imputation methods often suffer from the over-smoothing problem, which leads to the loss of cell-to-cell heterogeneity in the imputed results and affects downstream analyses. 
+Single-cell RNA sequencing (scRNA-seq) is a powerful technology for investigating cell-to-cell heterogeneity; however, its application is often hindered by dropout events. Consequently, accurately imputing dropout events is crucial for downstream analyses of scRNA-seq data. Nevertheless, existing imputation methods often suffer from the over-smoothing problem, which results in the loss of cell-to-cell heterogeneity in the imputed outcomes and affects downstream analyses.
 
-Here, we propose scGACL, a generative adversarial network (GAN) integrated with multi-scale contrastive learning. The GAN architecture drives the distribution of the imputed data to approximate that of the real data. To fundamentally address over-smoothing, the model incorporates a multi-scale contrastive learning mechanism: cell-level contrastive learning preserves fine-grained cell-to-cell heterogeneity, while cell-type-level contrastive learning maintains macroscopic biological variation across different cell groups. These mechanisms work in synergy to ensure imputation accuracy and  address the over-smoothing problem.
-![GitHub图像](/scGACL_model_v3.png)
+Here, we propose scGACL, a generative adversarial network (GAN) integrated with multi-scale contrastive learning. The GAN architecture facilitates the distribution of the imputed data to approximate that of the real data. To fundamentally address over-smoothing, the model incorporates a multi-scale contrastive learning mechanism: cell-level contrastive learning preserves fine-grained cell-to-cell heterogeneity, while cell-type-level contrastive learning maintains macroscopic biological variation across different cellular groups. These mechanisms function synergistically to ensure accurate imputation and effectively address the over-smoothing challenge.
+![GitHub图像](/scGACL_model.png)
 
 ## Requirements
 python==3.9.19
