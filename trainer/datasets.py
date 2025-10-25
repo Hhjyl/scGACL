@@ -76,8 +76,8 @@ def normalize(adata, filter_min_counts=True, size_factors=True, normalize_input=
 
 
 if __name__ == '__main__':
-    drop_expression_path = r'F:/pythonProject/scGACL/dataset/sim.groups1_counts.csv'
-    celltype_path = r'F:/pythonProject/scGACL/dataset/sim.groups1_groups.csv'
+    drop_expression_path = r'F:/pythonProject/scGACL/dataset/sim.groups3_counts.csv'
+    celltype_path = r'F:/pythonProject/scGACL/dataset/sim.groups3_groups.csv'
     drop_rna_ad = sc.read(drop_expression_path).T
     drop_rna_ad = normalize(drop_rna_ad)
     print(drop_rna_ad)
@@ -113,3 +113,4 @@ if __name__ == '__main__':
 #
 #     print(drop_rna_ad)
 #     print(drop_rna_ad.obs)
+
