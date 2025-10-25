@@ -4,8 +4,8 @@ a generative adversarial network with  multi-scale contrastive learning for accu
 Single-cell RNA sequencing (scRNA-seq) is a powerful technology for investigating cell-to-cell heterogeneity, yet its application is often hindered by dropout events, making accurate imputation essential for downstream analyses. Existing imputation methods, however, frequently suffer from the over-smoothing problem, which results in the loss of cell-to-cell heterogeneity in the imputed outcomes and affects downstream analyses. 
 
 To overcome this limitation, we propose scGACL, a generative adversarial network (GAN) integrated with multi-scale contrastive learning. The GAN architecture facilitates the distribution of the imputed data to approximate that of the real data. To fundamentally address over-smoothing, the model incorporates a multi-scale contrastive learning mechanism: cell-level contrastive learning preserves fine-grained cell-to-cell heterogeneity, while cell-type-level contrastive learning maintains macroscopic biological variation across different cellular groups. These mechanisms function synergistically to ensure accurate imputation and effectively address the over-smoothing challenge.
-![GitHub图像](/scGACL_model_v3.png)
 ![GitHub图像](/scGACL_plot.png)
+
 ## Requirements
 python==3.9.19
 
