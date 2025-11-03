@@ -92,7 +92,7 @@ if __name__ == '__main__':
     celltype_df.index = new_index
     cells = drop_rna_ad.obs_names.tolist()
     celltype_df = celltype_df.loc[cells, :]
-    drop_rna_ad.obs['cell_type'] = celltype_df.loc[:, 'x']
+    drop_rna_ad.obs['cell_type'] = celltype_df.loc[:, 'cell_type']
 
     print(drop_rna_ad)
     print(drop_rna_ad.obs)
@@ -113,4 +113,5 @@ if __name__ == '__main__':
 #
 #     print(drop_rna_ad)
 #     print(drop_rna_ad.obs)
+
 
