@@ -142,7 +142,7 @@ def get_mix_parameters(count, point=np.log(1)):
     genes_expr = abs(np.mean(count, axis=0) - point)  # 计算每个基因的均值，再减去point，然后取绝对值，得到一个一维的向量
     # 找到平均表达值低于 1e-2 的基因（即认为是无效基因）
     # 源 代码是0.01
-    null_genes = np.argwhere(genes_expr < 1-2)  # 得到一个x行1列的array，x代表无效基因的数量
+    null_genes = np.argwhere(genes_expr < 1e-2)  # 得到一个x行1列的array，x代表无效基因的数量
 
     # paralist represents 5 parameters of each gene
     paralist = np.zeros([count.shape[1], 5])  # 初始化一个矩阵，行是基因，列是 5 个参数："rate", "alpha", "beta", "mu", "sigma"
@@ -227,6 +227,7 @@ def cluster_get_dropout_rate(rna_ad: sc.AnnData, point=np.log(1.01)):
     np.nan_to_num(dropout_rate.X, copy=False, nan=0)
 
     return dropout_rate.X
+
 
 
 
