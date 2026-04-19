@@ -28,7 +28,7 @@ class SupConLoss(nn.Module):
             A loss scalar.
         """
         device = cfg.DEVICE
-
+        features = torch.nn.functional.normalize(features, dim=1)
         batch_size = features.shape[0]
         if labels is not None and mask is not None:
             raise ValueError('Cannot define both `labels` and `mask`')
