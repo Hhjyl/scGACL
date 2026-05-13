@@ -20,9 +20,9 @@ from torch.optim.lr_scheduler import ExponentialLR, MultiStepLR, StepLR
 from trainer.config import cfg
 from trainer.utils import MSEloss, cluster_acc, mkdir_p, GMMLoss, G_ADV_loss, D_ADV_loss, CL_loss
 
-numpy.random.seed(8)
-torch.manual_seed(8)
-torch.cuda.manual_seed(8)
+#numpy.random.seed(8)
+#torch.manual_seed(8)
+#torch.cuda.manual_seed(8)
 
 
 def pretrain_VAE(train_loader, pre_train_path, log_path, device):
